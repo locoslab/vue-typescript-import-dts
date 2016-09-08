@@ -15,5 +15,12 @@
     "vue",
     "typescript",
     "vueify"
-  ]
+  ],
+  "scripts": {
+    "test": "tsc"
+  },
+  "devDependencies": {
+    "vue": "^2.0.0-rc.5",
+    "typescript": "^2.0.2"
+  }
 }

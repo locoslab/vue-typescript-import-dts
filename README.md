@@ -1,4 +1,4 @@
-# vue-typescript-import-dts
+# vue-typescript-import-dts [![Build Status](https://travis-ci.org/locoslab/vue-typescript-import-dts.svg?branch=master)](https://travis-ci.org/locoslab/vue-typescript-import-dts)
 TypeScript declaration file that allows using `import` with `*.vue` files. The primary use case is a bundler environment like [Browserify](http://browserify.org/) with [vueify](https://github.com/vuejs/vueify). The file itself consists of 5 lines; this package is just for convenience.
 
 If you are using a TypeScript/vueify setup, there is additionally [vue-typescript-component](https://github.com/locoslab/vue-typescript-component) that allows using decorators to integrate TypeScript classes as Vue.js 2.0 components.
@@ -26,12 +26,12 @@ or explicitly in a TypeScript source file
 Then, it is possible to `import` a `*.vue` file
 
 ```js
-const Child = require('./child.vue')
+import Child = require('./child.vue')
 // or
 import * as Child from './child.vue'
 ```
 
-Note: There is no type checking or parsing of the `vue` file itself: this project only instructs the TypeScript compiler to assume the import of a file with a `.vue` extension succeeds and is a `Vue` object.
+Note: TypeScript will not type check, parse, or even verify the existence of the `vue` file: this project only instructs the TypeScript compiler to assume the import of 'something' that ends with `.vue` succeeds and is a `Vue` object.
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)

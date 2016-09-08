@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"sourceMap": false,
+		"pretty": true,
+		"outDir": "ignore"
+	},
+	"exclude": [
+		"node_modules"
+	],
+	"atom": {
+		"rewriteTsconfig": false
+	},
+	"compileOnSave": false
+}
