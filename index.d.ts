@@ -1,4 +1,5 @@
-declare module '*.vue'  {
-    const value: any;
-    export default value;
+declare module '*.vue' {
+	import Vue = require('vue')
+    const value: Vue
+    export = value
 }

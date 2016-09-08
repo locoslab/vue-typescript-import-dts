@@ -1,14 +1,14 @@
 # vue-typescript-import-dts
-TypeScript declaration file that allows using `import` with `*.vue` files. The primary use case is a bundler environment like [Browserify](http://browserify.org/) with [vueify](https://github.com/vuejs/vueify). The file itself consists of 4 lines; this package is just a convenience.
+TypeScript declaration file that allows using `import` with `*.vue` files. The primary use case is a bundler environment like [Browserify](http://browserify.org/) with [vueify](https://github.com/vuejs/vueify). The file itself consists of 5 lines; this package is just for convenience.
 
 If you are using a TypeScript/vueify setup, there is additionally [vue-typescript-component](https://github.com/locoslab/vue-typescript-component) that allows using decorators to integrate TypeScript classes as Vue.js 2.0 components.
 
 ## Usage
-This package requires at least TypeScript 2.0 RC.
+This package requires at least Vue.js 2.0.0-rc.5, which introduced new type definitions in the Vue.js package itself, and TypeScript 2.0.2 (the 2.0 RC).
 
 1. Install: `npm install vue-typescript-import-dts --save-dev`
 
-2. Either include it in the `types` field of `tsconfig.json`
+2. Either include it in the `types` field of your `tsconfig.json`
 
 ```javascript
 {
@@ -25,16 +25,13 @@ or explicitly in a TypeScript source file
 
 Then, it is possible to `import` a `*.vue` file
 
-```typescript
-import * as Child from './child.vue'
-// or
+```js
 const Child = require('./child.vue')
+// or
+import * as Child from './child.vue'
 ```
 
-Note: There is no type checking or parsing of the `vue` file itself: this project only instructs the TypeScript compiler to treat the result of importing a file with a `.vue` extension as an `any` object.
-
-## Important Caveat
-While `import Child from './child.vue'` compiles, it does not generate the required code and `Child` will be `undefined`.
+Note: There is no type checking or parsing of the `vue` file itself: this project only instructs the TypeScript compiler to assume the import of a file with a `.vue` extension succeeds and is a `Vue` object.
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
