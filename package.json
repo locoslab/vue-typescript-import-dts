@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "description": "TypeScript declaration file that allows using 'import' with *.vue files",
   "author": "Locoslab GmbH",
-  "private": true,
+  "homepage": "https://github.com/locoslab/vue-typescript-import-dts",
+  "bugs": "https://github.com/locoslab/vue-typescript-import-dts/issues",
+  "repository": "locoslab/vue-typescript-import-dts",
   "license": "MIT",
   "typings": "./index.d.ts",
+  "files": [
+    "./index.d.ts"
+  ],
   "keywords": [
     "vue",
     "typescript",
