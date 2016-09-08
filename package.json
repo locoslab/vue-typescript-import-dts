@@ -1,6 +1,6 @@
 {
   "name": "vue-typescript-import-dts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript declaration file that allows using 'import' with *.vue files",
   "author": "Locoslab GmbH",
   "homepage": "https://github.com/locoslab/vue-typescript-import-dts",
