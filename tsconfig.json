@@ -6,7 +6,8 @@
 		"strictNullChecks": true,
 		"sourceMap": false,
 		"pretty": true,
-		"outDir": "ignore"
+		"outDir": "ignore",
+		"lib": ["es5", "dom", "es2015.promise"]
 	},
 	"exclude": [
 		"node_modules"

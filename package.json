@@ -17,10 +17,11 @@
     "vueify"
   ],
   "scripts": {
-    "test": "tsc"
+    "test": "tsc",
+    "prepublish": "tsc"
   },
   "devDependencies": {
-    "vue": "^2.0.0-rc.5",
-    "typescript": "^2.0.2"
+    "vue": "^2.0.0",
+    "typescript": "^2.0.3"
   }
 }
