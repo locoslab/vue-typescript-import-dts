@@ -1,5 +1,5 @@
 declare module '*.vue' {
 	import Vue = require('vue')
-	const value: Vue
+	const value: Vue.ComponentOptions<Vue>
 	export = value
 }
