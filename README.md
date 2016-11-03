@@ -29,7 +29,7 @@ import Child = require('./child.vue')
 import * as Child from './child.vue'
 ```
 
-Note: TypeScript will not type check, parse, or even verify the existence of the `.vue` file: this project only instructs the TypeScript compiler to assume the import of 'something' that ends with `.vue` succeeds and is a `Vue` object.
+Note: TypeScript will not type check, parse, or even verify the existence of the `.vue` file: this project only instructs the TypeScript compiler to assume the import of 'something' that ends with `.vue` succeeds and is a `Vue.ComponentOptions<Vue>` object.
 
 ## Shameless Plug
 If you are using TypeScript 2.0 together with Vue.js 2.0, you might also be interested in
