@@ -2,7 +2,7 @@
 TypeScript declaration file that allows using `import` with `*.vue` files. The primary use case is a bundler environment like [Browserify](http://browserify.org/) with [vueify](https://github.com/vuejs/vueify). The file itself consists of 5 lines; this package is just for convenience.
 
 ## Usage
-This package requires TypeScript 2.0.3 and Vue.js 2.0.0, which ships with new type definitions in the Vue.js package itself. Both must be installed separately in your project, which allows choosing a suitable version.
+This package requires TypeScript 2 and Vue.js 2, which ships with new type definitions in the Vue.js package itself. Both must be installed separately in your project, which allows choosing a suitable version.
 
 1. Install: `npm install vue-typescript-import-dts --save-dev`
 
@@ -15,13 +15,16 @@ This package requires TypeScript 2.0.3 and Vue.js 2.0.0, which ships with new ty
 ...
 ```
 
-or explicitly in a TypeScript source file
+3. `import` a `*.vue` file, e.g.,
 
-```typescript
-/// <reference path="PATH/TO/node_modules/vue-typescript-import-dts/index.d.ts"/>
+```js
+import Child from './child.vue'
 ```
 
-Then, it is possible to `import` a `*.vue` file
+Note: TypeScript will not type check, parse, or even verify the existence of the `.vue` file: this project only instructs the TypeScript compiler to assume the import of 'something' that ends with `.vue` succeeds and is a `Vue.ComponentOptions<Vue>` object.
+
+## CommonJS Compatibility Syntax
+Please not that 3.0 of this package uses ES6 `export default` which also changes the import syntax to the example above. Please use version 2.0 if you prefer the CommonJS compatibility syntax:
 
 ```js
 import Child = require('./child.vue')
@@ -29,10 +32,8 @@ import Child = require('./child.vue')
 import * as Child from './child.vue'
 ```
 
-Note: TypeScript will not type check, parse, or even verify the existence of the `.vue` file: this project only instructs the TypeScript compiler to assume the import of 'something' that ends with `.vue` succeeds and is a `Vue.ComponentOptions<Vue>` object.
-
 ## Shameless Plug
-If you are using TypeScript 2.0 together with Vue.js 2.0, you might also be interested in
+If you are using TypeScript 2 together with Vue.js 2, you might also be interested in
 * [vue-typescript-component](https://github.com/locoslab/vue-typescript-component) to use TypeScript classes as Vue.js components
 * [vue-typescript-jest](https://github.com/locoslab/vue-typescript-jest) to test Vue.js components and TypeScript sources using Jest
 * [vue-jest-utils](https://github.com/locoslab/vue-jest-utils) to simplify snapshot testing of Vue.js components using Jest and html2jade
