@@ -6,7 +6,7 @@ This package requires TypeScript 2 and Vue.js 2, which ships with new type defin
 
 1. Install: `npm install vue-typescript-import-dts --save-dev`
 
-2. Either include it in the `types` field of your `tsconfig.json`
+2. Include it in the `types` field of your `tsconfig.json`
 
 ```javascript
 {
@@ -15,7 +15,7 @@ This package requires TypeScript 2 and Vue.js 2, which ships with new type defin
 ...
 ```
 
-3. `import` a `*.vue` file, e.g.,
+Then, it is possible to `import` a `*.vue` file:
 
 ```js
 import Child from './child.vue'
