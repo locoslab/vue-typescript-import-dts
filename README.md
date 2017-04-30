@@ -11,7 +11,9 @@ This package requires TypeScript 2 and Vue.js 2, which ships with new type defin
     * For ES6 modules: `npm install vue-typescript-import-dts --save-dev`
     * For CommonJS: `npm install vue-typescript-import-dts@2 --save-dev`
 
-2. Include it in the `types` field of your `tsconfig.json`
+2. Import (one of):
+    * Import this module before the import of a `.vue` file: `import 'vue-typescript-import-dts'`
+    * ... or include it in the `types` field of your `tsconfig.json` to globally allow using import with `.vue` files in your project:
 
 ```javascript
 {
@@ -35,7 +37,6 @@ If you are using TypeScript 2 together with Vue.js 2, you might also be interest
 * [vue-typescript-jest](https://github.com/locoslab/vue-typescript-jest) to test Vue.js components and TypeScript sources using Jest
 * [vue-jest-utils](https://github.com/locoslab/vue-jest-utils) to simplify snapshot testing of Vue.js components using Jest and html2jade
 * [vue-typescript-component-example](https://github.com/locoslab/vue-typescript-component-example) as an example for this package and the projects above that shows a TypeScript/Tsify/Vue.js/Vueify/Pug setup supporting Hot Module Replacement and unit/snapshot testing with Jest
-
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
