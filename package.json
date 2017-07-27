@@ -9,7 +9,8 @@
   "license": "MIT",
   "typings": "./index.d.ts",
   "files": [
-    "index.d.ts"
+    "index.d.ts",
+    "index.ts"
   ],
   "keywords": [
     "vue",
