@@ -3,4 +3,4 @@
 import Child from './child.vue'
 
 // access something to generate code
-const d1 = Child.methods
+const d1 = Child.component

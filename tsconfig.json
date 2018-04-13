@@ -1,17 +1,16 @@
 {
 	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"noImplicitAny": true,
-		"strictNullChecks": true,
-		"sourceMap": false,
-		"pretty": true,
-		"outDir": "ignore",
-		"lib": ["es5", "dom", "es2015.promise"]
+		"lib": ["dom", "es5", "es2015"],
+		"target": "es2015",
+		"module": "es6",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"allowJs": true,
+		"outDir": "build"
 	},
-	"exclude": [
-		"node_modules"
-	],
+	"exclude": ["node_modules", "build"],
 	"atom": {
 		"rewriteTsconfig": false
 	},

@@ -1,5 +1,8 @@
 /ignore/
 
+# build directory
+/build/
+
 # Created by https://www.gitignore.io/api/macos,windows,linux,visualstudiocode,webstorm,sublimetext,node,git
 
 ### macOS ###
@@ -198,6 +201,6 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-
 ### Git ###
 *.orig
+

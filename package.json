@@ -22,7 +22,7 @@
     "prepublish": "tsc"
   },
   "devDependencies": {
-    "vue": "^2.0.0",
-    "typescript": "^2.0.3"
+    "vue": "^2.5.16",
+    "typescript": "^2.8.1"
   }
 }
